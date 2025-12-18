@@ -24,7 +24,8 @@ public class RobotMap {
     public static final int LowerShooterCANID = 12;
 
 
-    public static final double shooterSpeed = 1*2;
+    public static final double shooterSpeed = 12;
+    public static final double elevatorSpeed = 12;
 
     
 }
