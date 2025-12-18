@@ -10,7 +10,7 @@ public class OI {
     //Define controller ports | DO NOT TOUCH |
     final CommandXboxController manipController = new CommandXboxController(1);
     final CommandXboxController driveController = new CommandXboxController(0);
-
+    final ElevatorSubsystem elevatorSubsystem = new ElevatorSubsystem();
     //Define all subsystems using "IntakeSubsystem IntakeSubsystem = new IntakeSubsystem();"
     //IntakeSubsystem IntakeSubsystem = new IntakeSubsystem();
 
@@ -69,7 +69,8 @@ public class OI {
          */
         //PUT YOUR COMMANDS in here! Default commands go first.  
         //manipController.a().whileTrue(new Intake(IntakeSubsystem));
-
+        manipController.a().whileTrue(new ElevateUp(elevatorSubsystem));
+        manipController.b().whileTrue(new ElevateUp(elevatorSubsystem));
     }
 
     public Command getAutonomousCommand() {
