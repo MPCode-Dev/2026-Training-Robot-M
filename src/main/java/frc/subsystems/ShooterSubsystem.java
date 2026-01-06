@@ -7,8 +7,8 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.RobotMap;
 
 public class ShooterSubsystem extends SubsystemBase{
-    private TalonFX UpperMotor = new TalonFX(RobotMap.UpperShooterCanID);
-    private TalonFX LowerMotor = new TalonFX(RobotMap.LowerShooterCanID);
+    private TalonFX UpperMotor = new TalonFX(RobotMap.UpperShooterCANID);
+    private TalonFX LowerMotor = new TalonFX(RobotMap.LowerShooterCANID);
      public ShooterSubsystem() {
         UpperMotor = new TalonFX(RobotMap.UpperShooterPort);
         LowerMotor = new TalonFX(RobotMap.LowerShooterPort);        

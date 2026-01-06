@@ -3,10 +3,10 @@ package frc.command;
 import frc.subsystems.ShooterSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 
-public class Shooter extends Command {
+public class RunShoot extends Command {
     public ShooterSubsystem ShooterSubsystem;
 
-    public Shooter(ShooterSubsystem ShooterSubsystem) {
+    public RunShoot(ShooterSubsystem ShooterSubsystem) {
         this.ShooterSubsystem = ShooterSubsystem;
     }
 

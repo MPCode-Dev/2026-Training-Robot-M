@@ -10,8 +10,8 @@ public class ElevatorSubsystem extends SubsystemBase{
     private TalonFX ElevatorMotor1 = new TalonFX(RobotMap.ElevatorCanID1);
     private TalonFX ElevatorMotor2 = new TalonFX(RobotMap.ElevatorCanID2);
      public ElevatorSubsystem() {
-        ElevatorMotor1 = new TalonFX(RobotMap.ElevatorPort);
-        ElevatorMotor2 = new TalonFX(RobotMap.ElevatorPort);
+        ElevatorMotor1 = new TalonFX(RobotMap.ElevatorPort1);
+        ElevatorMotor2 = new TalonFX(RobotMap.ElevatorPort2);
     }
 
     public void setSpeed(double ElevatorSpeed){
